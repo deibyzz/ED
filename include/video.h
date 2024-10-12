@@ -79,6 +79,10 @@ public:
      */
     Video &operator=(const Video &V);
 
+    /**
+     * @brief Esta parte la documenta Gabri
+     * @return
+     */
     int size() const;
 
     Image &operator[](int foto);

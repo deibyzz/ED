@@ -16,11 +16,11 @@ void read_directory(const std::string& name, vector<string>& v)
 
 
 Video::Video(){
-    //COMPLETAR POR EL ESTUDIANTE
+    Video(0);
 }
 /**************************************************/
 Video::Video(int n){
-//COMPLETAR POR EL ESTUDIANTE
+    seq.reserve(n);
 }
 /**************************************************/
 Video::Video(const Video &V){
