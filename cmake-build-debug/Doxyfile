@@ -1,0 +1,6 @@
+PROJECT_NAME           = "Práctica 1. Imágenes"
+OUTPUT_DIRECTORY       = /home/deibyss/Escritorio/2º INF/ED/mini_practica1_TDA-Video_Prado/estudiante/cmake-build-debug/doc_doxygen/
+INPUT                  = /home/deibyss/Escritorio/2º INF/ED/mini_practica1_TDA-Video_Prado/estudiante/.//include /home/deibyss/Escritorio/2º INF/ED/mini_practica1_TDA-Video_Prado/estudiante/.//src /home/deibyss/Escritorio/2º INF/ED/mini_practica1_TDA-Video_Prado/estudiante/.//doc
+GENERATE_LATEX         = NO
+IMAGE_PATH             = /home/deibyss/Escritorio/2º INF/ED/mini_practica1_TDA-Video_Prado/estudiante/.//doc
+EXTRACT_PRIVATE        = NO

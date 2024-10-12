@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Mini_Practica_1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "doc_doxygen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doc_doxygen-Debug-3d8e5f36ba2ff550915b.json",
+					"name" : "doc_doxygen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "image::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-image-Debug-468ca8cedceb2ea9ba34.json",
+					"name" : "image",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "morphing::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-morphing-Debug-f537411db036c0bd9075.json",
+					"name" : "morphing",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mrproper::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrproper-Debug-d34c831615b0b43bfd96.json",
+					"name" : "mrproper",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rebobinar::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rebobinar-Debug-794a45c2f84cf9df1570.json",
+					"name" : "rebobinar",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/deibyss/Escritorio/2\u00ba INF/ED/mini_practica1_TDA-Video_Prado/estudiante/cmake-build-debug",
+		"source" : "/home/deibyss/Escritorio/2\u00ba INF/ED/mini_practica1_TDA-Video_Prado/estudiante"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
