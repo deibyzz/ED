@@ -1,5 +1,8 @@
 
 #include "video.h"
+
+#include <algorithm>
+#include <assert.h>
 //COMPLETAR POR EL ESTUDIANTE
 
 void read_directory(const std::string& name, vector<string>& v)
@@ -14,51 +17,73 @@ void read_directory(const std::string& name, vector<string>& v)
     closedir(dirp);
 }
 
-
-Video::Video(){
+/**************************************************/
+Video::Video() {
     Video(0);
 }
+
+
 /**************************************************/
 Video::Video(int n){
+    assert(n >= 0);
     seq.reserve(n);
 }
 /**************************************************/
 Video::Video(const Video &V){
-//COMPLETAR POR EL ESTUDIANTE
-
+    seq=V.seq;
 }
 /**************************************************/
-Video::~Video(){}
+Video::~Video() {
+    seq.clear();
+}
 /**************************************************/
 Video &Video::operator=(const Video &V){
-//COMPLETAR POR EL ESTUDIANTE
+    seq=V.seq;
 }
 /**************************************************/
 int Video::size() const{
-    //COMPLETAR POR EL ESTUDIANTE
+    return(seq.size());
 }
 /**************************************************/
 Image &Video::operator[](int foto){
-    //COMPLETAR POR EL ESTUDIANTE
+    assert (foto >= 0 && foto < seq.size());
+    return(seq[foto]);
 }
 
 const Image &Video::operator[](int foto)const{
-    //COMPLETAR POR EL ESTUDIANTE
+    assert (foto >= 0 && foto < seq.size());
+    return(seq[foto]);
 }
 
 void Video::Insertar(int k, const Image &I){
-    //COMPLETAR POR EL ESTUDIANTE
-
+    seq.insert(seq.begin()+k,I);
 }
 
 void Video::Borrar(int k){
-    //COMPLETAR POR EL ESTUDIANTE
+    seq.erase(seq.begin() + k);
 }
 
 bool Video::LeerVideo(const string &path){
 
     //USA read_directory PARA LEER los fichero de un directorio
-    //COMPLETAR POR EL ESTUDIANTE
+    bool exito=true;
+    vector<string> v;
+    read_directory(path, v);
+
+    std::sort(v.begin(), v.end());
+
+    Image imagen;
+    int i = 2;
+    seq.clear();
+
+    while(i < v.size() && exito) {
+        string nombre = path + v[i];
+        exito = imagen.Load(nombre.c_str());
+        seq.push_back(imagen);
+        ++i;
+    }
+
+    return(exito);
 }
 
 bool Video::EscribirVideo(const string & path, const string &prefijo)const{
@@ -79,6 +104,14 @@ bool Video::EscribirVideo(const string & path, const string &prefijo)const{
         }
     }
 
-    //COMPLETAR POR EL ESTUDIANTE
+    Image imagen;
+    int i = 0;
+    while(exito && (i < seq.size())) {
+        imagen = seq.at(i);
+        string ruta = path + "/" + prefijo + "_0" + to_string(i);
+        exito = imagen.Save(ruta.c_str());
+        ++i;
+    }
 
+    return exito;
 }
