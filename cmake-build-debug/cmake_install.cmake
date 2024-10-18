@@ -1,4 +1,4 @@
-# Install script for directory: /home/deibyss/Escritorio/2º INF/ED/mini_practica1_TDA-Video_Prado/estudiante
+# Install script for directory: /home/gabrict28/Escritorio/ED/P3/ED
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/deibyss/Escritorio/2º INF/ED/mini_practica1_TDA-Video_Prado/estudiante/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/gabrict28/Escritorio/ED/P3/ED/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

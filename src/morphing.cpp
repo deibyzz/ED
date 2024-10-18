@@ -4,7 +4,7 @@
 #include <cassert>
 using namespace std;
 Video Morphing(const Image &I1,const Image &I2,int nframes){
- //RELLENAR POR EL ESTUDIANTE
+ // Me llamo Gabriel y tengo SIDA y Down
 
 }
 
